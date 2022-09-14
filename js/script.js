@@ -3,6 +3,10 @@ const calculateExpense = () => {
   const food = document.querySelector("#food").value;
   const rent = document.querySelector("#rent").value;
   const clothes = document.querySelector("#clothes").value;
+  document.querySelector("#income").value = ``
+  document.querySelector("#food").value = ``
+  document.querySelector("#rent").value = ``
+  document.querySelector("#clothes").value = ``
 
   if (
     income < 0 ||
@@ -36,6 +40,7 @@ const calculateExpense = () => {
 const calculateSavings = () => {
   // calculate saving amount
   const savePercentage = document.getElementById("save").value;
+  document.getElementById("save").value = ``
 //   Validate saving percentage value
   if (savePercentage < 0) {
     alert("Provide positive saving value");
